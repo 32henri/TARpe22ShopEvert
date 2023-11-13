@@ -1,7 +1,18 @@
+using Microsoft.EntityFrameworkCore;
+using TARpe22ShopEvert.Core.Dto.ServiceInterface;
+using TARpe22ShopEvert.Data;
+using TARpe22ShopEvert.ApplicationServices.Services;
+using TARpe22ShopEvert.Core.ServiceInterface;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<TARpe22ShopEvertContext>(OptionsBuilderConfigurationExtensions => OptionsBuilderConfigurationExtensions.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<ISpaceshipsServices, SpaceshipsServices>();
+builder.Services.AddScoped<IFilesServices, FilesServices>();
+builder.Services.AddScoped<IRealEstatesServices, RealEstatesServices>();
 
 var app = builder.Build();
 
@@ -25,3 +36,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+;

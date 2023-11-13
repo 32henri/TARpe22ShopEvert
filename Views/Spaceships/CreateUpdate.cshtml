@@ -1,0 +1,174 @@
+﻿@model TARpe22ShopEvert.Models.Spaceship.SpaceshipCreateUpdateViewModel
+@if (Model.Id != Guid.Empty)
+{
+    <h1>Update</h1>
+}
+else
+{
+    <h1>Create</h1>
+}
+
+<div>
+    <form method="post" enctype="multipart/form-data">
+        <input asp-for="Id" type="hidden" />
+        <input asp-for="CreatedAt" type="hidden" />
+        <input asp-for="ModifiedAt" type="hidden" />
+
+        <div class="form-group row">
+            <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Name" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Price" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Price" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Type" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Type" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Description" class="col-sm-2 co9l-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Description" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="FuelType" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="FuelType" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="FuelCapacity" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="FuelCapacity" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="FuelConsumption" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Name" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="PassengerCount" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="PassengerCount" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="EnginePower" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="EnginePower" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="DoesHaveAutopilot" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="DoesHaveAutopilot" class="form-check-input" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CrewCount" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="CrewCount" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="CargoWeight" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="CargoWeight" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="DoesHaveLifeSupportSystems" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="DoesHaveLifeSupportSystems" class="form-check-input" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="BuiltDate" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="BuiltDate" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="LastMaintenance" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="LastMaintenance" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="MaintenanceCount" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="MaintenanceCount" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="FullTripsCount" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="FullTripsCount" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="MaidenLaunch" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="MaidenLaunch" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Manufacturer" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Manufacturer" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Files" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-5">
+                <input class="form-control custom-file-input" asp-for="Files" multiple type="file" />
+                <label class="custom-file-label">Choose File...</label>
+            </div>
+        </div>
+
+        <hr />
+        @foreach (var images in Model.Image)
+        {
+            <partial name="_images" model="images" />
+            <input asp-action="removeImage" asp-controller="spaceships" asp-route-imageId="@images.ImageId" type="submit" class="btn btn-danger" value="Remove Image" />
+        }
+        <hr />
+        @if (Model.Id != Guid.Empty)
+        {
+            <input asp-action="update" asp-controller="spaceships" type="submit" class="btn btn-primary" value="Update" />
+        }
+        else
+        {
+            <input asp-action="create" asp-controller="spaceships" type="submit" class="btn btn-primary" value="Create" />
+        }
+        <a asp-action="index" asp-controller="spaceships" class="btn btn-primary">Cancel</a>
+    </form>
+</div>
+
+@section Scripts
+    {
+    <script>
+        $(document).ready(function () {
+            $('custom-file-input').on("change", function () {
+                var fileLabel = $(this).next('custom-file-label');
+                var files = $(this)[0].files;
+                if (files.length > 1) {
+                    fileLabel.html(files.length + ' files selected');
+                }
+                else if (files.length == 1) {
+                    fileLabel.html(files[0].name);
+                }
+            })
+        })
+    </script>
+}
