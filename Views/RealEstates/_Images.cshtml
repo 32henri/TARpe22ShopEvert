@@ -1,9 +1,0 @@
-﻿@model TARpe22ShopEvert.Models.RealEstate.FileToApiViewModel
-@{
-    var photoPaths = "~/multiplefileUpload" + (Model.FilePath ?? "noimage.jpg");
-
-}
-<div class="form-group row col-sm-4 offset-2">
-    <div>@Model.FilePath</div>
-    <img class="card-img-top" src="@photoPaths" asp-append-version />
-</div>
