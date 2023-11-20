@@ -11,11 +11,11 @@ using TARpe22ShopEvert.Data;
 
 namespace TARpe22ShopEvert.ApplicationServices.Services
 {
-    public class RealEstatesServices : IRealEstatesServices
+    public class CarsServices : ICarsServices
     {
         private readonly TARpe22ShopEvertContext _context;
         private readonly IFilesServices _filesServices;
-        public RealEstatesServices
+        public CarsServices
             (
             TARpe22ShopEvertContext context,
             IFilesServices filesServices
@@ -24,34 +24,17 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             _context = context;
             _filesServices = filesServices;
         }
-        public async Task<RealEstate> Create(RealEstateDto dto)
+        public async Task<Car> Create(CarDto dto)
         {
-            RealEstate realEstate = new();
+            Car realEstate = new();
 
             realEstate.Id = Guid.NewGuid();
-            realEstate.Address = dto.Address;
-            realEstate.City = dto.City;
-            realEstate.Country = dto.Country;
-            realEstate.County = dto.County;
-            realEstate.PostalCode = dto.PostalCode;
-            realEstate.PhoneNumber = dto.PhoneNumber;
-            realEstate.FaxNumber = dto.FaxNumber;
-            realEstate.ListingDescription = dto.ListingDescription;
-            realEstate.SquareMeters = dto.SquareMeters;
-            realEstate.BuildDate = dto.BuildDate;
+            realEstate.Mark = dto.Mark;
+            realEstate.Model = dto.Model;
             realEstate.Price = dto.Price;
-            realEstate.RoomCount = dto.RoomCount;
-            realEstate.EstateFloor = dto.EstateFloor;
-            realEstate.Bathrooms = dto.Bathrooms;
-            realEstate.Bedrooms = dto.Bedrooms;
-            realEstate.DoesHaveParkingSpace = dto.DoesHaveParkingSpace;
-            realEstate.DoesHavePowerGridConnection = dto.DoesHavePowerGridConnection;
-            realEstate.DoesHaveWaterGridConnection = dto.DoesHaveWaterGridConnection;
-            realEstate.Type = dto.Type;
-            realEstate.IsPropertyNewDevelopment = dto.IsPropertyNewDevelopment;
-            realEstate.IsPropertySold = dto.IsPropertySold;
+            realEstate.IsNew = dto.IsNew;
+            realEstate.HorsePower = dto.HorsePower;
             realEstate.CreatedAt = DateTime.Now;
-            realEstate.ModifiedAt = DateTime.Now;
             _filesServices.FilesToApi(dto, realEstate);
 
 
@@ -59,7 +42,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             await _context.SaveChangesAsync();
             return realEstate;
         }
-        public async Task<RealEstate> Delete(Guid id)
+        public async Task<Car> Delete(Guid id)
         {
             var realEstateId = await _context.RealEstates
                 .Include(x => x.FilesToApi)
@@ -77,9 +60,9 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             await _context.SaveChangesAsync();
             return realEstateId;
         }
-        public async Task<RealEstate> Update(RealEstateDto dto)
+        public async Task<Car> Update(CarDto dto)
         {
-            RealEstate realEstate = new RealEstate();
+            Car Car = new Car();
 
             realEstate.Id = dto.Id;
             realEstate.Address = dto.Address;
@@ -111,9 +94,9 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             await _context.SaveChangesAsync();
             return realEstate;
         }
-        public async Task<RealEstate> GetAsync(Guid id)
+        public async Task<Car> GetAsync(Guid id)
         {
-            var result = await _context.RealEstates
+            var result = await _context.Cars
                 .FirstOrDefaultAsync(x => x.Id == id);
             return result;
         }

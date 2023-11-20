@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {}
+    "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+    "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "projectUniqueName": "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
         "projectName": "TARpe22ShopEvert.Core",
-        "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
-        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\obj\\",
+        "projectPath": "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "packagesPath": "C:\\Users\\hener\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "F:\\Visual Studio 2022\\Shared components\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hener\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

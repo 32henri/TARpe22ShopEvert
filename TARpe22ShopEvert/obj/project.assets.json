@@ -8239,23 +8239,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\opilane\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\hener\\.nuget\\packages\\": {},
+    "F:\\Visual Studio 2022\\Shared components\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj",
+      "projectUniqueName": "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj",
       "projectName": "TARpe22ShopEvert",
-      "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj",
-      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert\\obj\\",
+      "projectPath": "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj",
+      "packagesPath": "C:\\Users\\hener\\.nuget\\packages\\",
+      "outputPath": "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "F:\\Visual Studio 2022\\Shared components\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hener\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8271,14 +8271,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj": {
-              "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj"
+            "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj": {
+              "projectPath": "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj"
             },
-            "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
-              "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+            "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+              "projectPath": "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
             },
-            "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
-              "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
+            "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
+              "projectPath": "D:\\repos\\dfg\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
             }
           }
         }
@@ -8345,7 +8345,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

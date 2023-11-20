@@ -6,42 +6,43 @@ using TARpe22ShopEvert.ApplicationServices.Services;
 using TARpe22ShopEvert.Core.Dto;
 using TARpe22ShopEvert.Core.ServiceInterface;
 using TARpe22ShopEvert.Data;
+using TARpe22ShopEvert.Models.Cars;
 using TARpe22ShopEvert.Models.RealEstate;
 using TARpe22ShopEvert.Models.Spaceship;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace TARpe22ShopEvert.Controllers
 {
-    public class RealEstatesController : Controller
+    public class CarsController : Controller
     {
-        private readonly IRealEstatesServices _realEstates;
+        private readonly ICarsServices _Car;
         private readonly TARpe22ShopEvertContext _context;
         private readonly IFilesServices _filesServices;
-        public RealEstatesController
+        public CarsController
             (
-            IRealEstatesServices realEstates,
+            ICarsServices Car,
             TARpe22ShopEvertContext context,
             IFilesServices filesServices
             )
         {
-            _realEstates = realEstates;
+            _Car = Car;
             _context = context;
             _filesServices = filesServices;
         }
         [HttpGet]
         public IActionResult Index()
         {
-            var result = _context.RealEstates
+            var result = _context.Cars
                 .OrderByDescending(x => x.CreatedAt)
-                .Select(x => new RealEstateIndexViewModel
+                .Select(x => new CarIndexViewModel
                 {
                     Id = x.Id,
-                    Address = x.Address,
-                    City = x.City,
-                    Country = x.Country,
-                    SquareMeters = x.SquareMeters,
+                    Mark = x.Mark,
+                    IsNew= x.IsNew,
+                    HorsePower = x.HorsePower,
+                    Model = x.Model,
                     Price = x.Price,
-                    IsPropertySold = x.IsPropertySold,
+                    CreatedAt = x.CreatedAt,
                 });
             return View(result);
         }
@@ -49,50 +50,24 @@ namespace TARpe22ShopEvert.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            RealEstateCreateUpdateViewModel vm = new();
+            CarCreateUpdateViewModel vm = new();
             return View("CreateUpdate", vm);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(RealEstateCreateUpdateViewModel vm)
+        public async Task<IActionResult> Create(CarCreateUpdateViewModel vm)
         {
-            var dto = new RealEstateDto()
+            var dto = new CarDto()
             {
                 Id = Guid.NewGuid(),
-                Address = vm.Address,
-                City = vm.City,
-                Country = vm.Country,
-                County = vm.County,
-                SquareMeters = vm.SquareMeters,
+                Mark = vm.Mark,
+                Model = vm.Model,
+                IsNew = vm.IsNew,
                 Price = vm.Price,
-                PostalCode = vm.PostalCode,
-                PhoneNumber = vm.PhoneNumber,
-                FaxNumber = vm.FaxNumber,
-                ListingDescription = vm.ListingDescription,
-                BuildDate = vm.BuildDate,
-                RoomCount = vm.RoomCount,
-                FloorCount = vm.FloorCount,
-                EstateFloor = vm.EstateFloor,
-                Bathrooms = vm.Bathrooms,
-                Bedrooms = vm.Bedrooms,
-                DoesHaveParkingSpace = vm.DoesHaveParkingSpace,
-                DoesHavePowerGridConnection = vm.DoesHavePowerGridConnection,
-                DoesHaveWaterGridConnection = vm.DoesHaveWaterGridConnection,
-                Type = vm.Type,
-                IsPropertyNewDevelopment = vm.IsPropertyNewDevelopment,
-                IsPropertySold = vm.IsPropertySold,
+                HorsePower = vm.HorsePower,
                 CreatedAt = DateTime.Now,
-                ModifiedAt = DateTime.Now,
-                Files = vm.Files,
-                FilesToApiDtos = vm.FileToApiViewModels
-                .Select(z => new FileToApiDto
-                {
-                    Id = z.ImageId,
-                    ExistingFilePath = z.FilePath,
-                    RealEstateId = z.RealEstateId,
-                }).ToArray()
             };
-            var result = await _realEstates.Create(dto);
+            var result = await _Car.Create(dto);
             if (result == null)
             {
                 return RedirectToAction(nameof(Index));
@@ -102,8 +77,8 @@ namespace TARpe22ShopEvert.Controllers
         [HttpGet]
         public async Task<IActionResult> Update(Guid id)
         {
-            var realEstate = await _realEstates.GetAsync(id);
-            if (realEstate == null)
+            var Car = await _Car.GetAsync(id);
+            if (Car == null)
             {
                 return NotFound();
             }
