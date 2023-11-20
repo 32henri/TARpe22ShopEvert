@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {}
+    "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+    "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
         "projectName": "TARpe22ShopEvert.Core",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -98,12 +98,12 @@
         }
       }
     },
-    "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
+    "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
         "projectName": "TARpe22ShopEvert.Data",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -127,8 +127,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
-                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+              "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+                "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
               }
             }
           }

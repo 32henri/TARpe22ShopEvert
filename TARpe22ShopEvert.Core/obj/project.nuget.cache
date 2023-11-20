@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BXHNnxoRRO4PZYCXR7hZZyLNfxeCVn6lv6gZrzfFH/1ZWXkDPmsnFJsUTeloJYcosaG2hCEfm2MXQYLjP4g1RA==",
+  "dgSpecHash": "UR88LJcAyhJGDyJkEDB6C6ayHMcNFdqmOqcdFLgBfwG61RaGd0KUAxSo87vdsf2FfYf70CX+QySAnGAO6O06Fg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.aspnetcore.hosting\\2.2.7\\microsoft.aspnetcore.hosting.2.2.7.nupkg.sha512",
