@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using TARpe22ShopEvert.Core.ServiceInterface;
 using TARpe22ShopEvert.Data;
 using TARpe22ShopEvert.ApplicationServices.Services;
-using TARpe22ShopEvert.ApplicationServices.Services;
 using TARpe22ShopEvert.Core.ServiceInterface;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<TARpe22ShopEvertContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<ISpaceshipsServices, SpaceshipsServices>();
-builder.Services.AddScoped<IFilesServices, FileServices>();
+builder.Services.AddScoped<IFilesServices, FilesServices>();
 builder.Services.AddScoped<IRealEstatesServices, RealEstatesServices>();
 builder.Services.AddScoped<IWeatherForecastsServices, WeatherForecastsServices>();
 

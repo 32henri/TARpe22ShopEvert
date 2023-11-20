@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +29,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TARpe22ShopEvert.Core\TARpe22ShopEvert.Core.csproj" />
     <ProjectReference Include="..\TARpe22ShopEvert.Data\TARpe22ShopEvert.Data.csproj" />
+    <ProjectReference Include="..\TARpe22ShopEvert.ApplicationServices\TARpe22ShopEvert.ApplicationServices.csproj" />
   </ItemGroup>
 
 </Project>

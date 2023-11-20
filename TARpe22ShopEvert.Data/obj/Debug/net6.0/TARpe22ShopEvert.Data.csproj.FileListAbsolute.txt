@@ -1,0 +1,5 @@
+C:\Users\opilane\Source\Repos\TARpe22ShopEvert5\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.csproj.AssemblyReference.cache
+C:\Users\opilane\Source\Repos\TARpe22ShopEvert5\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\opilane\Source\Repos\TARpe22ShopEvert5\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.AssemblyInfoInputs.cache
+C:\Users\opilane\Source\Repos\TARpe22ShopEvert5\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.AssemblyInfo.cs
+C:\Users\opilane\Source\Repos\TARpe22ShopEvert5\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.csproj.CoreCompileInputs.cache
