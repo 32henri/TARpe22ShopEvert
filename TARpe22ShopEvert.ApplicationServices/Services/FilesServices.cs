@@ -85,7 +85,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
                         {
                             Id = Guid.NewGuid(),
                             ExistingFilePath = uniqueFileName,
-                            RealEstateId = realEstate.Id,
+                            CarId = realEstate.Id,
                         };
                         _context.FilesToApi.AddAsync(path);
                     }

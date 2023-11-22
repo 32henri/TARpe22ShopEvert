@@ -52,6 +52,7 @@ namespace TARpe22ShopEvert.Controllers
             {
                 Id = vm.Id,
                 Name = vm.Name,
+                Price = vm.Price,
                 Description = vm.Description,
                 PassengerCount = vm.PassengerCount,
                 CrewCount = vm.CrewCount,
@@ -108,6 +109,7 @@ namespace TARpe22ShopEvert.Controllers
 
             vm.Id = spaceship.Id;
             vm.Name = spaceship.Name;
+            vm.Price = spaceship.Price;
             vm.Description = spaceship.Description;
             vm.PassengerCount = spaceship.PassengerCount;
             vm.CrewCount = spaceship.CrewCount;
@@ -137,6 +139,7 @@ namespace TARpe22ShopEvert.Controllers
             {
                 Id = vm.Id,
                 Name = vm.Name,
+                Price = vm.Price,
                 Description = vm.Description,
                 PassengerCount = vm.PassengerCount,
                 CrewCount = vm.CrewCount,
@@ -195,6 +198,7 @@ namespace TARpe22ShopEvert.Controllers
             var vm = new SpaceshipDetailsViewModel();
             vm.Id = spaceship.Id;
             vm.Name = spaceship.Name;
+            vm.Price = spaceship.Price;
             vm.Description = spaceship.Description;
             vm.PassengerCount = spaceship.PassengerCount;
             vm.CrewCount = spaceship.CrewCount;
@@ -239,6 +243,7 @@ namespace TARpe22ShopEvert.Controllers
             var vm = new SpaceshipDeleteViewModel();
             vm.Id = spaceship.Id;
             vm.Name = spaceship.Name;
+            vm.Price = spaceship.Price;
             vm.Description = spaceship.Description;
             vm.PassengerCount = spaceship.PassengerCount;
             vm.CrewCount = spaceship.CrewCount;

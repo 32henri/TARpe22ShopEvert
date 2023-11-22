@@ -8220,11 +8220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj",
       "projectName": "TARpe22ShopEvert.ApplicationServices",
-      "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj",
+      "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.ApplicationServices\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.ApplicationServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8246,11 +8246,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
-              "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+            "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+              "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
             },
-            "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
-              "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
+            "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
+              "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
             }
           }
         }

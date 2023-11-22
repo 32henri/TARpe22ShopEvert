@@ -7,6 +7,9 @@ namespace TARpe22ShopEvert.Models.Spaceship
         [Key]
         public Guid? Id { get; set; } // globally unique identifier
         public string Name { get; set; } // ship name
+        public int Price { get; set; }
+        public string FuelType { get; set; }
+        public int FuelCapacity { get; set; }
         public string Description { get; set; } // ship description
         //public ICollection<Dimension> Dimensions { get; set; } // contains an pbject of Dimension type, wwhich contains three int values representing width(x) height(y) and depth (z) values
         public int PassengerCount { get; set; } // how many passengers does the ship carry

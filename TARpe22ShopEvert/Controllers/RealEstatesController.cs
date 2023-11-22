@@ -108,7 +108,7 @@ namespace TARpe22ShopEvert.Controllers
                 return NotFound();
             }
             var images = await _context.FilesToApi
-                .Where(x => x.RealEstateId == id)
+                .Where(x => x.CarId == id)
                 .Select(y => new FileToApiViewModel
                 {
                     FilePath = y.ExistingFilePath,
@@ -200,7 +200,7 @@ namespace TARpe22ShopEvert.Controllers
                 return NotFound();
             }
             var images = await _context.FilesToApi
-                .Where(x => x.RealEstateId == id)
+                .Where(x => x.CarId == id)
                 .Select(y => new FileToApiViewModel
                 {
                     FilePath = y.ExistingFilePath,
@@ -247,7 +247,7 @@ namespace TARpe22ShopEvert.Controllers
                 return NotFound();
             }
             var images = await _context.FilesToApi
-                .Where(x => x.RealEstateId == id)
+                .Where(x => x.CarId == id)
                 .Select(y => new FileToApiViewModel
                 {
                     FilePath = y.ExistingFilePath,

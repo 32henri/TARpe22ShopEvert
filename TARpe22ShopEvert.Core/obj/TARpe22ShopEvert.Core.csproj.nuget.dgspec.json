@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {}
+    "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+    "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
         "projectName": "TARpe22ShopEvert.Core",
-        "projectPath": "C:\\Users\\opilane\\Source\\repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert5\\TARpe22ShopEvert.Core\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

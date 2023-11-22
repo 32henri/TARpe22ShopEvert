@@ -11,7 +11,7 @@ namespace TARpe22ShopEvert.Core.Domain
         BMW, Audi, Honda, Toyota, Bently, Subaru, Jeep, Lamborghini, Ford
     }
 
-    public class CarDto
+    public class Car
     {
         public Guid Id { get; set; }
         public string Mark { get; set; }

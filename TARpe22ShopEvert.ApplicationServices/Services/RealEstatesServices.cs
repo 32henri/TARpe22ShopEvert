@@ -56,7 +56,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
 
 
             await _context.RealEstates.AddAsync(realEstate);
-            await _context.SaveChangesAsync();  
+            await _context.SaveChangesAsync();
             return realEstate;
         }
         public async Task<RealEstate> Delete(Guid id)
@@ -65,11 +65,11 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
                 .Include(x => x.FilesToApi)
                 .FirstOrDefaultAsync(x => x.Id == id);
             var images = await _context.FilesToApi
-                .Where(x => x.RealEstateId == id)
+                .Where(x => x.CarId == id)
                 .Select(y => new FileToApiDto
                 {
                     Id = y.Id,
-                    RealEstateId = y.RealEstateId,
+                    RealEstateId = y.CarId,
                     ExistingFilePath = y.ExistingFilePath
                 }).ToArrayAsync();
             await _filesServices.RemoveImagesFromApi(images);
@@ -80,7 +80,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
         public async Task<RealEstate> Update(RealEstateDto dto)
         {
             RealEstate realEstate = new RealEstate();
-            
+
             realEstate.Id = dto.Id;
             realEstate.Address = dto.Address;
             realEstate.City = dto.City;
@@ -106,7 +106,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             realEstate.CreatedAt = dto.CreatedAt;
             realEstate.ModifiedAt = DateTime.Now;
             _filesServices.FilesToApi(dto, realEstate);
-            
+
             _context.RealEstates.Update(realEstate);
             await _context.SaveChangesAsync();
             return realEstate;

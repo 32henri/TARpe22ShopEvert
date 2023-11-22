@@ -9,85 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TARpe22ShopEvert
 build_property.RootNamespace = TARpe22ShopEvert
-build_property.ProjectDir = C:\Users\opilane\Source\repos\TARpe22ShopEvert5\TARpe22ShopEvert\
+build_property.ProjectDir = C:\Users\opilane\Source\Repos\TARpe22ShopEvert9\TARpe22ShopEvert\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\opilane\Source\repos\TARpe22ShopEvert5\TARpe22ShopEvert
+build_property.MSBuildProjectDirectory = C:\Users\opilane\Source\Repos\TARpe22ShopEvert9\TARpe22ShopEvert
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Home/Index.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Cars/CreateUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDcmVhdGVVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Cars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Cars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Cars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Cars/_Images.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xfSW1hZ2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Home/Privacy.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/RealEstates/CreateUpdate.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/RealEstates/CreateUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbEVzdGF0ZXNcQ3JlYXRlVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/RealEstates/Delete.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/RealEstates/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbEVzdGF0ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/RealEstates/Details.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/RealEstates/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbEVzdGF0ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/RealEstates/Index.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/RealEstates/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbEVzdGF0ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/RealEstates/_Images.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/RealEstates/_Images.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbEVzdGF0ZXNcX0ltYWdlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Shared/Error.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Spaceships/CreateUpdate.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Spaceships/CreateUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhY2VzaGlwc1xDcmVhdGVVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Spaceships/Delete.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Spaceships/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhY2VzaGlwc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Spaceships/Details.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Spaceships/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhY2VzaGlwc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Spaceships/Index.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Spaceships/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhY2VzaGlwc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Spaceships/_Images.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Spaceships/_Images.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhY2VzaGlwc1xfSW1hZ2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/WeatherForecasts/City.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/WeatherForecasts/City.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckZvcmVjYXN0c1xDaXR5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/WeatherForecasts/Index.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/WeatherForecasts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckZvcmVjYXN0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/_ViewImports.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/_ViewStart.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/opilane/Source/repos/TARpe22ShopEvert5/TARpe22ShopEvert/Views/Shared/_Layout.cshtml]
+[C:/Users/opilane/Source/Repos/TARpe22ShopEvert9/TARpe22ShopEvert/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0f23cuafwu
