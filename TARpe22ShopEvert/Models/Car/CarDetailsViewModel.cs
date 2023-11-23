@@ -12,6 +12,6 @@ namespace TARpe22ShopEvert.Models.Cars
         public DateTime CreatedAt { get; set; }
         public bool IsNew { get; set; }
         public int HorsePower { get; set; }
-        public List<FileToApiViewModel> FileToApiViewModels { get; set; } = new List<FileToApiViewModel>();
+        public List<FileToApiViewModelCar> FileToApiViewModelCar { get; set; } = new List<FileToApiViewModelCar>();
     }
 }

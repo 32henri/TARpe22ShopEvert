@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using TARpe22ShopEvert.Models.RealEstate;
 
 namespace TARpe22ShopEvert.Models.Cars
