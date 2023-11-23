@@ -24,7 +24,6 @@ namespace TARpe22ShopEvert.SpaceshipTest
             spaceship.Description = "Description";
             spaceship.FuelType = "Cowfarts";
             spaceship.FuelCapacity = 100;
-            spaceship.
         }
     }
 }
