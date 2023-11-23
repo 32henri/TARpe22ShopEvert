@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using TARpe22ShopEvert.ApplicationServices.Services;
+using TARpe22ShopEvert.Core.ServiceInterface;
 
 namespace TARpe22ShopEvert.SpaceshipTest
 {
@@ -12,7 +15,7 @@ namespace TARpe22ShopEvert.SpaceshipTest
         protected IServiceProvider ServiceProvider { get; set; }
         protected TestBase() 
         {
-            var services = new ServicveCollection();
+            var services = new ServiceCollection();
             SetupServices(services);
             serviceProvider = services.BuildServiceProvider();
         }
@@ -26,7 +29,7 @@ namespace TARpe22ShopEvert.SpaceshipTest
 
         public virtual void SetupServices(IServiceCollection services)
         {
-            services.AddScoped<ISpaceshipsServices, SpaceshipssServices>();
+            services.AddScoped<ISpaceshipsServices, SpaceshipsServices>();
             services.AddScoped<IFilesServices, FilesServices>();
             services.AddScoped<IWebHost>();
 
