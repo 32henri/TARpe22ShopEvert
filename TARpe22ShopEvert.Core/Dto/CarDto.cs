@@ -21,6 +21,7 @@ namespace TARpe22ShopEvert.Core.Dto
         public DateTime CreatedAt { get; set; }
         public bool IsNew { get; set; }
         public int HorsePower { get; set; }
+        public IEnumerable<FileToApiDto> FilesToApiDtos { get; set; } = new List<FileToApiDto>();
 
     }
 }
