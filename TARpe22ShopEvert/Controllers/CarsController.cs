@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.Metrics;
 using System.Net;
@@ -84,7 +84,7 @@ namespace TARpe22ShopEvert.Controllers
             }
             var images = await _context.FilesToApi
                 .Where(x => x.CarId == id)
-                .Select(y => new FileToApiViewModel
+                .Select(y => new FileToApiViewModelCar
                 {
                     FilePath = y.ExistingFilePath,
                     ImageId = y.Id
@@ -98,7 +98,7 @@ namespace TARpe22ShopEvert.Controllers
             vm.Price = Car.Price;
             vm.HorsePower = Car.HorsePower;
             vm.CreatedAt = DateTime.Now;
-            vm.FileToApiViewModels.AddRange(images);
+            vm.FileToApiViewModelCar.AddRange(images);
 
             return View("CreateUpdate", vm);
         }
@@ -110,38 +110,19 @@ namespace TARpe22ShopEvert.Controllers
                 Id = (Guid)vm.Id,
                 Mark = vm.Mark,
                 Model = vm.Model,
+                HorsePower = vm.HorsePower,
                 IsNew = vm.IsNew,
-                County = vm.County,
-                SquareMeters = vm.SquareMeters,
                 Price = vm.Price,
-                PostalCode = vm.PostalCode,
-                PhoneNumber = vm.PhoneNumber,
-                FaxNumber = vm.FaxNumber,
-                ListingDescription = vm.ListingDescription,
-                BuildDate = vm.BuildDate,
-                RoomCount = vm.RoomCount,
-                FloorCount = vm.FloorCount,
-                EstateFloor = vm.EstateFloor,
-                Bathrooms = vm.Bathrooms,
-                Bedrooms = vm.Bedrooms,
-                DoesHaveParkingSpace = vm.DoesHaveParkingSpace,
-                DoesHavePowerGridConnection = vm.DoesHavePowerGridConnection,
-                DoesHaveWaterGridConnection = vm.DoesHaveWaterGridConnection,
-                Type = vm.Type,
-                IsPropertyNewDevelopment = vm.IsPropertyNewDevelopment,
-                IsPropertySold = vm.IsPropertySold,
                 CreatedAt = vm.CreatedAt,
-                ModifiedAt = DateTime.Now,
-                Files = vm.Files,
-                FilesToApiDtos = vm.FileToApiViewModels
+                FilesToApiDtos = vm.FileToApiViewModelCar
                 .Select(z => new FileToApiDto
                 {
                     Id = z.ImageId,
                     ExistingFilePath = z.FilePath,
-                    RealEstateId = z.RealEstateId,
+                    CarId = z.CarId,
                 }).ToArray()
             };
-            var result = await _realEstates.Update(dto);
+            var result = await _Car.Update(dto);
             if (result == null)
             {
                 return RedirectToAction(nameof(Index));
@@ -151,99 +132,65 @@ namespace TARpe22ShopEvert.Controllers
         [HttpGet]
         public async Task<IActionResult> Details(Guid id)
         {
-            var Car = await _realEstates.GetAsync(id);
+            var Car = await _Car.GetAsync(id);
             if (Car == null)
             {
                 return NotFound();
             }
             var images = await _context.FilesToApi
                 .Where(x => x.CarId == id)
-                .Select(y => new FileToApiViewModel
+                .Select(y => new FileToApiViewModelCar
                 {
                     FilePath = y.ExistingFilePath,
                     ImageId = y.Id
                 }).ToArrayAsync();
 
-            var vm = new RealEstateDetailsViewModel();
+            var vm = new CarDetailsViewModel();
 
             vm.Id = Car.Id;
-            vm.Address = Car.Address;
-            vm.City = Car.City;
-            vm.Country = Car.Country;
-            vm.County = Car.County;
-            vm.SquareMeters = Car.SquareMeters;
             vm.Price = Car.Price;
-            vm.PostalCode = Car.PostalCode;
-            vm.PhoneNumber = Car.PhoneNumber;
-            vm.FaxNumber = Car.FaxNumber;
-            vm.ListingDescription = Car.ListingDescription;
-            vm.BuildDate = Car.BuildDate;
-            vm.RoomCount = Car.RoomCount;
-            vm.FloorCount = Car.FloorCount;
-            vm.EstateFloor = Car.EstateFloor;
-            vm.Bathrooms = Car.Bathrooms;
-            vm.Bedrooms = Car.Bedrooms;
-            vm.DoesHaveParkingSpace = Car.DoesHaveParkingSpace;
-            vm.DoesHavePowerGridConnection = Car.DoesHavePowerGridConnection;
-            vm.DoesHaveWaterGridConnection = Car.DoesHaveWaterGridConnection;
-            vm.Type = Car.Type;
-            vm.IsPropertyNewDevelopment = Car.IsPropertyNewDevelopment;
-            vm.IsPropertySold = Car.IsPropertySold;
+            vm.Mark = Car.Mark;
+            vm.Model = Car.Model;
+            vm.HorsePower = Car.HorsePower;
+            vm.IsNew = Car.IsNew;
             vm.CreatedAt = Car.CreatedAt;
-            vm.ModifiedAt = Car.ModifiedAt;
-            vm.FileToApiViewModels.AddRange(images);
+            vm.FileToApiViewModelCar.AddRange(images);
 
             return View(vm);
         }
         [HttpGet]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var Car = await _realEstates.GetAsync(id);
+            var Car = await _Car.GetAsync(id);
             if (Car == null)
             {
                 return NotFound();
             }
             var images = await _context.FilesToApi
                 .Where(x => x.CarId == id)
-                .Select(y => new FileToApiViewModel
+                .Select(y => new FileToApiViewModelCar
                 {
                     FilePath = y.ExistingFilePath,
                     ImageId = y.Id
                 }).ToArrayAsync();
 
-            var vm = new RealEstateDeleteViewModel();
+            var vm = new CarDeleteViewModel();
 
             vm.Id = Car.Id;
-            vm.Address = Car.Address;
-            vm.City = Car.City;
-            vm.Country = Car.Country;
-            vm.County = Car.County;
-            vm.SquareMeters = Car.SquareMeters;
+            vm.Mark = Car.Mark;
+            vm.Model = Car.Model;
+            vm.HorsePower = Car.HorsePower;
+            vm.IsNew = Car.IsNew;
+            vm.CreatedAt = Car.CreatedAt;
             vm.Price = Car.Price;
-            vm.PostalCode = Car.PostalCode;
-            vm.PhoneNumber = Car.PhoneNumber;
-            vm.FaxNumber = Car.FaxNumber;
-            vm.ListingDescription = Car.ListingDescription;
-            vm.BuildDate = Car.BuildDate;
-            vm.RoomCount = Car.RoomCount;
-            vm.FloorCount = Car.FloorCount;
-            vm.EstateFloor = Car.EstateFloor;
-            vm.Bathrooms = Car.Bathrooms;
-            vm.Bedrooms = Car.Bedrooms;
-            vm.DoesHaveParkingSpace = Car.DoesHaveParkingSpace;
-            vm.DoesHavePowerGridConnection = Car.DoesHavePowerGridConnection;
-            vm.DoesHaveWaterGridConnection = Car.DoesHaveWaterGridConnection;
-            vm.Type = Car.Type;
-            vm.IsPropertyNewDevelopment = Car.IsPropertyNewDevelopment;
-            vm.IsPropertySold = Car.IsPropertySold;
-            vm.FileToApiViewModels.AddRange(images);
+            vm.FileToApiViewModelCar.AddRange(images);
 
             return View(vm);
         }
         [HttpPost]
         public async Task<IActionResult> DeleteConfirmation(Guid id)
         {
-            var Car = await _realEstates.Delete(id);
+            var Car = await _Car.Delete(id);
             if (Car == null)
             {
                 return RedirectToAction(nameof(Index));
@@ -252,7 +199,7 @@ namespace TARpe22ShopEvert.Controllers
 
         }
         [HttpPost]
-        public async Task<IActionResult> RemoveImage(FileToApiViewModel vm)
+        public async Task<IActionResult> RemoveImage(FileToApiViewModelCar vm)
         {
             var dto = new FileToApiDto()
             {
