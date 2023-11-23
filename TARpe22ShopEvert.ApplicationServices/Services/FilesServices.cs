@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using TARpe22ShopEvert.Core.Domain;
 using TARpe22ShopEvert.Core.Dto;
 using TARpe22ShopEvert.Data;
+using IHostingEnvironment = Microsoft.Extensions.Hosting.IHostingEnvironment;
 
 namespace TARpe22ShopEvert.ApplicationServices.Services
 {
@@ -69,13 +70,13 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             string uniqueFileName = null;
             if (dto.Files != null && dto.Files.Count > 0)
             {
-                if (!Directory.Exists(_webHost.WebRootPath + "\\multipleFileUpload\\"))
+                if (!Directory.Exists(_webHost.ContentRootPath + "\\multipleFileUpload\\"))
                 {
-                    Directory.CreateDirectory(_webHost.WebRootPath + "\\multipleFileUpload\\");
+                    Directory.CreateDirectory(_webHost.ContentRootPath + "\\multipleFileUpload\\");
                 }
                 foreach (var image in dto.Files)
                 {
-                    string uploadsFolder = Path.Combine(_webHost.WebRootPath, "multipleFileUpload");
+                    string uploadsFolder = Path.Combine(_webHost.ContentRootPath, "multipleFileUpload");
                     uniqueFileName = Guid.NewGuid().ToString() + "_" + image.FileName;
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
@@ -98,7 +99,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             {
                 var imageId = await _context.FilesToApi
                     .FirstOrDefaultAsync(x => x.ExistingFilePath == dto.ExistingFilePath);
-                var filePath = _webHost.WebRootPath + "\\multipleFileUpload\\" + imageId.ExistingFilePath;
+                var filePath = _webHost.ContentRootPath + "\\multipleFileUpload\\" + imageId.ExistingFilePath;
                 if (File.Exists(filePath))
                 {
                     File.Delete(filePath);
@@ -112,7 +113,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
         {
             var imageId = await _context.FilesToApi
                 .FirstOrDefaultAsync(x => x.Id == dto.Id);
-            var filePath = _webHost.WebRootPath + "\\multipleFileUpload\\" + imageId.ExistingFilePath;
+            var filePath = _webHost.ContentRootPath + "\\multipleFileUpload\\" + imageId.ExistingFilePath;
             if (File.Exists(filePath))
             {
                 File.Delete(filePath);
