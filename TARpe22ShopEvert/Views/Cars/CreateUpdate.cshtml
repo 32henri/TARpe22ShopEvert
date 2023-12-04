@@ -1,5 +1,5 @@
 ﻿@using TARpe22ShopEvert.Core.Domain;
-@model TARpe22ShopEvert.Models.RealEstate.RealEstateCreateUpdateViewModel
+@model TARpe22ShopEvert.Models.Cars.CarCreateUpdateViewModel
 @if (Model.Id.HasValue) 
 {
     <h1>Update</h1>
@@ -181,9 +181,9 @@ else
 
         <hr />
 
-        @if (Model.FileToApiViewModels != null)
+        @if (Model.FileToApiViewModelCar != null)
         { 
-            @foreach (var images in Model.FileToApiViewModels)
+            @foreach (var images in Model.FileToApiViewModelCar)
             {
                 <partial name="_Images" model="images" />
                 <input asp-action="removeImage" asp-controller="realEstates" asp-route-imageID="@images.ImageId" type="submit" class="btn btn-danger" value="Remove Image"/>

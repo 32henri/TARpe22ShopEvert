@@ -1,50 +1,25 @@
-﻿@model IEnumerable<TARpe22ShopEvert.Models.RealEstate.RealEstateIndexViewModel>
+﻿@model IEnumerable<TARpe22ShopEvert.Models.Cars.CarIndexViewModel>
 @{
     int rowNumber = 1;
 }
-<div class="h1">Estates</div>
+<div class="h1">Cars</div>
 <div>
-    <a asp-action="Create" asp-controller="realEstates" type="submit" class="btn btn-primary">Create</a>
+    <a asp-action="Create" asp-controller="car" type="submit" class="btn btn-primary">Create</a>
 </div>
 <form method="post">
     <table class="table table-hover">
         <thead>
             <tr>
-                <th scope="col">Nr</th>
-                <th scope="col">Location</th>
-                <th scope="col">Country</th>
-                <th scope="col">Size</th>
+                <th scope="col">Id</th>
+                <th scope="col">Mark</th>
                 <th scope="col">Price</th>
-                <th scope="col">Sale Status</th>
+                <th scope="col">Model</th>
+                <th scope="col">CreatedAt</th>
+                <th scope="col">IsNew</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var realEstate in Model)
-            {
-                <tr>
-                    <td>@rowNumber</td>
-                    <td>@realEstate.Address, @realEstate.City</td>
-                    <td>@realEstate.Country</td>
-                    <td>@realEstate.SquareMeters</td>
-                    <td>@realEstate.Price</td>
-                    <td>
-                        @if (realEstate.IsPropertySold)
-                        {
-                            @("SOLD!!!")
-                        }
-                        else
-                        {
-                            @("Available")
-                        }
-                    </td>
-                    <td>
-                        <a asp-action="details" asp-controller="realEstates" asp-route-id="@realEstate.Id" class="btn btn-info">Details</a>
-                        <a asp-action="Update" asp-controller="realEstates" asp-route-id="@realEstate.Id" class="btn btn-primary">Edit</a>
-                        <a asp-action="delete" asp-controller="realEstates" asp-route-id="@realEstate.Id" type="submit" class="btn btn-danger">Delete</a>
-                    </td>
-                </tr>
-                rowNumber++;
-            }
+            lel loodab et siin ei pea midagi olema
         </tbody>
     </table>
 </form>

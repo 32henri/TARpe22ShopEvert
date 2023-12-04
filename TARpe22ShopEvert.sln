@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TARpe22ShopEvert.Applicatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TARpe22ShopEvert.Core", "TARpe22ShopEvert.Core\TARpe22ShopEvert.Core.csproj", "{815AB8A8-5E31-4F08-9203-7C7249D23F47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TARpe22ShopEvert.SpaceshipTest", "TARpe22ShopEvert.SpaceshipTest\TARpe22ShopEvert.SpaceshipTest.csproj", "{1A027F33-842A-4668-A2E8-BE74B9BECD6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TARpe22ShopEvert.SpaceshipTest", "TARpe22ShopEvert.SpaceshipTest\TARpe22ShopEvert.SpaceshipTest.csproj", "{2C41CFFE-3BBC-41D1-BA7C-201CEE5FCAEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{815AB8A8-5E31-4F08-9203-7C7249D23F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{815AB8A8-5E31-4F08-9203-7C7249D23F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{815AB8A8-5E31-4F08-9203-7C7249D23F47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A027F33-842A-4668-A2E8-BE74B9BECD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A027F33-842A-4668-A2E8-BE74B9BECD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A027F33-842A-4668-A2E8-BE74B9BECD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A027F33-842A-4668-A2E8-BE74B9BECD6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C41CFFE-3BBC-41D1-BA7C-201CEE5FCAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C41CFFE-3BBC-41D1-BA7C-201CEE5FCAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C41CFFE-3BBC-41D1-BA7C-201CEE5FCAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C41CFFE-3BBC-41D1-BA7C-201CEE5FCAEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
