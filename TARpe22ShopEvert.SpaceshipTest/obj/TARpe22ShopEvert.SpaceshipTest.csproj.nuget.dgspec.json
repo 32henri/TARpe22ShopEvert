@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj": {}
+    "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+    "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
         "projectName": "TARpe22ShopEvert.Core",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,14 +98,14 @@
         }
       }
     },
-    "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj": {
+    "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj",
-        "projectName": "TARpe22ShopEvert.SpaceshipTest",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
+        "projectName": "TARpe22ShopEvert.Data",
+        "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.SpaceshipTest\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -127,8 +127,113 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
-                "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+              "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+                "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj",
+        "projectName": "TARpe22ShopEvert.SpaceshipTest",
+        "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj",
+        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.SpaceshipTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+                "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+              },
+              "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
+                "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
               }
             }
           }

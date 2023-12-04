@@ -20,6 +20,7 @@ namespace TARpe22ShopEvert.Core.Domain
         public DateTime CreatedAt { get; set; }
         public bool IsNew { get; set; }
         public int HorsePower { get; set; }
+        public IEnumerable<FileToApi> FilesToApiCar { get; set; } = new List<FileToApi>();
 
     }
 }

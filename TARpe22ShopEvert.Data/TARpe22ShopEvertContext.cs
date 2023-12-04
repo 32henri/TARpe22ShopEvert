@@ -17,5 +17,6 @@ namespace TARpe22ShopEvert.Data
         public DbSet<RealEstate> RealEstates { get; set; }
         public DbSet<Car> Cars { get; set; }
         public DbSet<FileToApi> FilesToApi { get; set; }
+        public DbSet<FileToApi> FilesToApiCar { get; set; }
     }
 }

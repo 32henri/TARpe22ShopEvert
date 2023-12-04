@@ -9,6 +9,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
         Task<FileToDatabase> RemoveImage(FileToDatabaseDto dto);
         Task<List<FileToDatabase>> RemoveImagesFromDatabase(FileToDatabaseDto[] dtos);
         void FilesToApi(RealEstateDto dto, RealEstate realEstate);
+        void FilesToApiCar(CarDto dto, Car car);
         Task<List<FileToApi>> RemoveImagesFromApi(FileToApiDto[] dtos);
         Task<FileToApi> RemoveImageFromApi(FileToApiDto dto);
     }

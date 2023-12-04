@@ -3,3 +3,17 @@ C:\Users\opilane\Source\Repos\TARpe22ShopEvert5\TARpe22ShopEvert.Core\obj\Debug\
 C:\Users\opilane\Source\Repos\TARpe22ShopEvert5\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.AssemblyInfoInputs.cache
 C:\Users\opilane\Source\Repos\TARpe22ShopEvert5\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.AssemblyInfo.cs
 C:\Users\opilane\Source\Repos\TARpe22ShopEvert5\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.csproj.CoreCompileInputs.cache
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\bin\Debug\net6.0\TARpe22ShopEvert.Core.deps.json
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\bin\Debug\net6.0\TARpe22ShopEvert.Core.runtimeconfig.json
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\bin\Debug\net6.0\TARpe22ShopEvert.Core.dll
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\bin\Debug\net6.0\TARpe22ShopEvert.Core.pdb
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.csproj.AssemblyReference.cache
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.AssemblyInfoInputs.cache
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.AssemblyInfo.cs
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.csproj.CoreCompileInputs.cache
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.dll
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\refint\TARpe22ShopEvert.Core.dll
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.pdb
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.genruntimeconfig.cache
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\ref\TARpe22ShopEvert.Core.dll

@@ -19,41 +19,41 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
         {
             _context = context;
             _files = files;
+
         }
 
         public async Task<Spaceship> Create(SpaceshipDto dto)
         {
             Spaceship spaceship = new Spaceship();
             FileToDatabase file = new FileToDatabase();
-
-            spaceship.Id = Guid.NewGuid();
+            spaceship.Id = dto.Id;
+            spaceship.Price = dto.Price;
+            spaceship.Type = dto.Type;
             spaceship.Name = dto.Name;
             spaceship.Description = dto.Description;
-            //Dimensions = dto.Dimensions,
+            spaceship.FuelType = dto.FuelType;
+            spaceship.FuelCapacity = dto.FuelCapacity;
+            spaceship.FuelConsumptionPerDay = dto.FuelConsumptionPerDay;
             spaceship.PassengerCount = dto.PassengerCount;
+            spaceship.EnginePower = dto.EnginePower;
             spaceship.CrewCount = dto.CrewCount;
             spaceship.CargoWeight = dto.CargoWeight;
-            spaceship.MaxSpeedInVaccuum = dto.MaxSpeedInVaccuum;
             spaceship.BuiltAtDate = dto.BuiltAtDate;
+            spaceship.LastMaintenance = dto.LastMaintenance;
+            spaceship.MaintenanceCount = dto.MaintenanceCount;
+            spaceship.FullTripsCount = dto.FullTripsCount;
             spaceship.MaidenLaunch = dto.MaidenLaunch;
             spaceship.Manufacturer = dto.Manufacturer;
-            spaceship.IsSpaceshipPreviouslyOwned = dto.IsSpaceshipPreviouslyOwned;
-            spaceship.FullTripsCount = dto.FullTripsCount;
-            spaceship.Type = dto.Type;
-            spaceship.EnginePower = dto.EnginePower;
-            spaceship.FuelConsumptionPerDay = dto.FuelConsumptionPerDay;
-            spaceship.MaintenanceCount = dto.MaintenanceCount;
-            spaceship.LastMaintenance = dto.LastMaintenance;
-            spaceship.CreatedAt = DateTime.Now;
-            spaceship.ModifiedAt = DateTime.Now;
+            spaceship.CreatedAt = dto.CreatedAt;
+            spaceship.ModifiedAt = dto.ModifiedAt;
 
+            await _context.Spaceships.AddAsync(spaceship);
             if (dto.Files != null)
             {
                 _files.UploadFilesToDatabase(dto, spaceship);
             }
-
-            await _context.Spaceships.AddAsync(spaceship);
             await _context.SaveChangesAsync();
+
             return spaceship;
         }
         public async Task<Spaceship> Update(SpaceshipDto dto)
@@ -61,46 +61,43 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             var domain = new Spaceship()
             {
                 Id = dto.Id,
+                Price = dto.Price,
+                Type = dto.Type,
                 Name = dto.Name,
                 Description = dto.Description,
-                //Dimensions = dto.Dimensions,
+                FuelType = dto.FuelType,
+                FuelCapacity = dto.FuelCapacity,
+                FuelConsumptionPerDay = dto.FuelConsumptionPerDay,
                 PassengerCount = dto.PassengerCount,
+                EnginePower = dto.EnginePower,
                 CrewCount = dto.CrewCount,
                 CargoWeight = dto.CargoWeight,
-                MaxSpeedInVaccuum = dto.MaxSpeedInVaccuum,
                 BuiltAtDate = dto.BuiltAtDate,
+                LastMaintenance = dto.LastMaintenance,
+                MaintenanceCount = dto.MaintenanceCount,
+                FullTripsCount = dto.FullTripsCount,
                 MaidenLaunch = dto.MaidenLaunch,
                 Manufacturer = dto.Manufacturer,
-                IsSpaceshipPreviouslyOwned = dto.IsSpaceshipPreviouslyOwned,
-                FullTripsCount = dto.FullTripsCount,
-                Type = dto.Type,
-                EnginePower = dto.EnginePower,
-                FuelConsumptionPerDay = dto.FuelConsumptionPerDay,
-                MaintenanceCount = dto.MaintenanceCount,
-                LastMaintenance = dto.LastMaintenance,
                 CreatedAt = dto.CreatedAt,
-                ModifiedAt = DateTime.Now,
+                ModifiedAt = dto.ModifiedAt,
             };
+
             if (dto.Files != null)
             {
                 _files.UploadFilesToDatabase(dto, domain);
             }
+
             _context.Spaceships.Update(domain);
             await _context.SaveChangesAsync();
+
             return domain;
         }
-        //public async Task<Spaceship> GetUpdate(Guid id)
-        //{
-        //    var result = await _context.Spaceships
-        //        .FirstOrDefaultAsync(x => x.Id == id);
-        //    return result;
-        //}
-
         public async Task<Spaceship> Delete(Guid id)
         {
             var spaceshipId = await _context.Spaceships
                 .FirstOrDefaultAsync(x => x.Id == id);
-
+            _context.Spaceships.Remove(spaceshipId);
+            await _context.SaveChangesAsync();
             var images = await _context.FilesToDatabase
                 .Where(x => x.SpaceshipId == id)
                 .Select(y => new FileToDatabaseDto
@@ -112,15 +109,14 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
 
             await _files.RemoveImagesFromDatabase(images);
             _context.Spaceships.Remove(spaceshipId);
-            await _context.SaveChangesAsync();
 
             return spaceshipId;
-        }
 
-        public async Task<Spaceship> GetAsync(Guid Id)
+        }
+        public async Task<Spaceship> GetAsync(Guid id)
         {
             var result = await _context.Spaceships
-                .FirstOrDefaultAsync(x => x.Id == Id);
+                .FirstOrDefaultAsync(x => x.Id == id);
             return result;
         }
     }

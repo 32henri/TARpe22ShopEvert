@@ -26,73 +26,52 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
         }
         public async Task<Car> Create(CarDto dto)
         {
-            Car realEstate = new();
+            Car car = new();
 
-            realEstate.Id = Guid.NewGuid();
-            realEstate.Mark = dto.Mark;
-            realEstate.Model = dto.Model;
-            realEstate.Price = dto.Price;
-            realEstate.IsNew = dto.IsNew;
-            realEstate.HorsePower = dto.HorsePower;
-            realEstate.CreatedAt = DateTime.Now;
-            _filesServices.FilesToApi(dto, realEstate);
+            car.Id = Guid.NewGuid();
+            car.Mark = dto.Mark;
+            car.Model = dto.Model;
+            car.Price = dto.Price;
+            car.IsNew = dto.IsNew;
+            car.HorsePower = dto.HorsePower;
+            car.CreatedAt = DateTime.Now;
+            _filesServices.FilesToApiCar(dto, car);
 
 
-            await _context.RealEstates.AddAsync(realEstate);
+            await _context.Cars.AddAsync(car);
             await _context.SaveChangesAsync();
-            return realEstate;
+            return car;
         }
         public async Task<Car> Delete(Guid id)
         {
-            var realEstateId = await _context.RealEstates
-                .Include(x => x.FilesToApi)
+            var carId = await _context.Cars
+                .Include(x => x.FilesToApiCar)
                 .FirstOrDefaultAsync(x => x.Id == id);
-            var images = await _context.FilesToApi
+            var images = await _context.FilesToApiCar
                 .Where(x => x.CarId == id)
                 .Select(y => new FileToApiDto
                 {
                     Id = y.Id,
-                    RealEstateId = y.CarId,
+                    CarId = y.CarId,
                     ExistingFilePath = y.ExistingFilePath
                 }).ToArrayAsync();
             await _filesServices.RemoveImagesFromApi(images);
-            _context.RealEstates.Remove(realEstateId);
+            _context.Cars.Remove(carId);
             await _context.SaveChangesAsync();
-            return realEstateId;
+            return carId;
         }
         public async Task<Car> Update(CarDto dto)
         {
-            Car Car = new Car();
+            Car car = new Car();
 
-            realEstate.Id = dto.Id;
-            realEstate.Address = dto.Address;
-            realEstate.City = dto.City;
-            realEstate.Country = dto.Country;
-            realEstate.County = dto.County;
-            realEstate.PostalCode = dto.PostalCode;
-            realEstate.PhoneNumber = dto.PhoneNumber;
-            realEstate.FaxNumber = dto.FaxNumber;
-            realEstate.ListingDescription = dto.ListingDescription;
-            realEstate.SquareMeters = dto.SquareMeters;
-            realEstate.BuildDate = dto.BuildDate;
-            realEstate.Price = dto.Price;
-            realEstate.RoomCount = dto.RoomCount;
-            realEstate.EstateFloor = dto.EstateFloor;
-            realEstate.Bathrooms = dto.Bathrooms;
-            realEstate.Bedrooms = dto.Bedrooms;
-            realEstate.DoesHaveParkingSpace = dto.DoesHaveParkingSpace;
-            realEstate.DoesHavePowerGridConnection = dto.DoesHavePowerGridConnection;
-            realEstate.DoesHaveWaterGridConnection = dto.DoesHaveWaterGridConnection;
-            realEstate.Type = dto.Type;
-            realEstate.IsPropertyNewDevelopment = dto.IsPropertyNewDevelopment;
-            realEstate.IsPropertySold = dto.IsPropertySold;
-            realEstate.CreatedAt = dto.CreatedAt;
-            realEstate.ModifiedAt = DateTime.Now;
-            _filesServices.FilesToApi(dto, realEstate);
+            car.Id = dto.Id;
+            car.Price = dto.Price;
+            car.CreatedAt = dto.CreatedAt;
+            _filesServices.FilesToApiCar(dto, car);
 
-            _context.RealEstates.Update(realEstate);
+            _context.Cars.Update(car);
             await _context.SaveChangesAsync();
-            return realEstate;
+            return car;
         }
         public async Task<Car> GetAsync(Guid id)
         {

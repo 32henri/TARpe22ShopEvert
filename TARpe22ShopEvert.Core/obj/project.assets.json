@@ -2690,11 +2690,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
       "projectName": "TARpe22ShopEvert.Core",
-      "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+      "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

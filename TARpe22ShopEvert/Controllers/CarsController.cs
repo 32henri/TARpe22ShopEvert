@@ -15,17 +15,17 @@ namespace TARpe22ShopEvert.Controllers
 {
     public class CarsController : Controller
     {
-        private readonly ICarsServices _Car;
+        private readonly ICarsServices _car;
         private readonly TARpe22ShopEvertContext _context;
         private readonly IFilesServices _filesServices;
         public CarsController
             (
-            ICarsServices Car,
+            ICarsServices car,
             TARpe22ShopEvertContext context,
             IFilesServices filesServices
             )
         {
-            _Car = Car;
+            _car = car;
             _context = context;
             _filesServices = filesServices;
         }
@@ -67,7 +67,7 @@ namespace TARpe22ShopEvert.Controllers
                 HorsePower = vm.HorsePower,
                 CreatedAt = DateTime.Now,
             };
-            var result = await _Car.Create(dto);
+            var result = await _car.Create(dto);
             if (result == null)
             {
                 return RedirectToAction(nameof(Index));
@@ -77,8 +77,8 @@ namespace TARpe22ShopEvert.Controllers
         [HttpGet]
         public async Task<IActionResult> Update(Guid id)
         {
-            var Car = await _Car.GetAsync(id);
-            if (Car == null)
+            var car = await _car.GetAsync(id);
+            if (car == null)
             {
                 return NotFound();
             }
@@ -91,12 +91,12 @@ namespace TARpe22ShopEvert.Controllers
                 }).ToArrayAsync();
             var vm = new CarCreateUpdateViewModel();
 
-            vm.Id = Car.Id;
-            vm.Mark = Car.Mark;
-            vm.Model = Car.Model;
-            vm.IsNew = Car.IsNew;
-            vm.Price = Car.Price;
-            vm.HorsePower = Car.HorsePower;
+            vm.Id = car.Id;
+            vm.Mark = car.Mark;
+            vm.Model = car.Model;
+            vm.IsNew = car.IsNew;
+            vm.Price = car.Price;
+            vm.HorsePower = car.HorsePower;
             vm.CreatedAt = DateTime.Now;
             vm.FileToApiViewModelCar.AddRange(images);
 
@@ -122,7 +122,7 @@ namespace TARpe22ShopEvert.Controllers
                     CarId = z.CarId,
                 }).ToArray()
             };
-            var result = await _Car.Update(dto);
+            var result = await _car.Update(dto);
             if (result == null)
             {
                 return RedirectToAction(nameof(Index));
@@ -132,8 +132,8 @@ namespace TARpe22ShopEvert.Controllers
         [HttpGet]
         public async Task<IActionResult> Details(Guid id)
         {
-            var Car = await _Car.GetAsync(id);
-            if (Car == null)
+            var car = await _car.GetAsync(id);
+            if (car == null)
             {
                 return NotFound();
             }
@@ -147,13 +147,13 @@ namespace TARpe22ShopEvert.Controllers
 
             var vm = new CarDetailsViewModel();
 
-            vm.Id = Car.Id;
-            vm.Price = Car.Price;
-            vm.Mark = Car.Mark;
-            vm.Model = Car.Model;
-            vm.HorsePower = Car.HorsePower;
-            vm.IsNew = Car.IsNew;
-            vm.CreatedAt = Car.CreatedAt;
+            vm.Id = car.Id;
+            vm.Price = car.Price;
+            vm.Mark = car.Mark;
+            vm.Model = car.Model;
+            vm.HorsePower = car.HorsePower;
+            vm.IsNew = car.IsNew;
+            vm.CreatedAt = car.CreatedAt;
             vm.FileToApiViewModelCar.AddRange(images);
 
             return View(vm);
@@ -161,8 +161,8 @@ namespace TARpe22ShopEvert.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var Car = await _Car.GetAsync(id);
-            if (Car == null)
+            var car = await _car.GetAsync(id);
+            if (car == null)
             {
                 return NotFound();
             }
@@ -176,13 +176,13 @@ namespace TARpe22ShopEvert.Controllers
 
             var vm = new CarDeleteViewModel();
 
-            vm.Id = Car.Id;
-            vm.Mark = Car.Mark;
-            vm.Model = Car.Model;
-            vm.HorsePower = Car.HorsePower;
-            vm.IsNew = Car.IsNew;
-            vm.CreatedAt = Car.CreatedAt;
-            vm.Price = Car.Price;
+            vm.Id = car.Id;
+            vm.Mark = car.Mark;
+            vm.Model = car.Model;
+            vm.HorsePower = car.HorsePower;
+            vm.IsNew = car.IsNew;
+            vm.CreatedAt = car.CreatedAt;
+            vm.Price = car.Price;
             vm.FileToApiViewModelCar.AddRange(images);
 
             return View(vm);
@@ -190,8 +190,8 @@ namespace TARpe22ShopEvert.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteConfirmation(Guid id)
         {
-            var Car = await _Car.Delete(id);
-            if (Car == null)
+            var car = await _car.Delete(id);
+            if (car == null)
             {
                 return RedirectToAction(nameof(Index));
             }

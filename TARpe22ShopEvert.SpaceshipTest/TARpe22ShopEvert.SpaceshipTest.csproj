@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TARpe22ShopEvert.Core\TARpe22ShopEvert.Core.csproj" />
+    <ProjectReference Include="..\TARpe22ShopEvert.Data\TARpe22ShopEvert.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,5 @@
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.SpaceshipTest\obj\Debug\net6.0\TARpe22ShopEvert.SpaceshipTest.csproj.AssemblyReference.cache
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.SpaceshipTest\obj\Debug\net6.0\TARpe22ShopEvert.SpaceshipTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.SpaceshipTest\obj\Debug\net6.0\TARpe22ShopEvert.SpaceshipTest.AssemblyInfoInputs.cache
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.SpaceshipTest\obj\Debug\net6.0\TARpe22ShopEvert.SpaceshipTest.AssemblyInfo.cs
+C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.SpaceshipTest\obj\Debug\net6.0\TARpe22ShopEvert.SpaceshipTest.csproj.CoreCompileInputs.cache

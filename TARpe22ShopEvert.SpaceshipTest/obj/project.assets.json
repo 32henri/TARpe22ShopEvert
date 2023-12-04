@@ -2409,6 +2409,25 @@
         "runtime": {
           "bin/placeholder/TARpe22ShopEvert.Core.dll": {}
         }
+      },
+      "TARpe22ShopEvert.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting": "2.2.7",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Microsoft.EntityFrameworkCore": "6.0.22",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.22",
+          "TARpe22ShopEvert.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TARpe22ShopEvert.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TARpe22ShopEvert.Data.dll": {}
+        }
       }
     }
   },
@@ -7224,12 +7243,18 @@
       "type": "project",
       "path": "../TARpe22ShopEvert.Core/TARpe22ShopEvert.Core.csproj",
       "msbuildProject": "../TARpe22ShopEvert.Core/TARpe22ShopEvert.Core.csproj"
+    },
+    "TARpe22ShopEvert.Data/1.0.0": {
+      "type": "project",
+      "path": "../TARpe22ShopEvert.Data/TARpe22ShopEvert.Data.csproj",
+      "msbuildProject": "../TARpe22ShopEvert.Data/TARpe22ShopEvert.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore.InMemory >= 6.0.25",
       "TARpe22ShopEvert.Core >= 1.0.0",
+      "TARpe22ShopEvert.Data >= 1.0.0",
       "xunit >= 2.6.2"
     ]
   },
@@ -7240,11 +7265,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj",
       "projectName": "TARpe22ShopEvert.SpaceshipTest",
-      "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj",
+      "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.SpaceshipTest\\TARpe22ShopEvert.SpaceshipTest.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.SpaceshipTest\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.SpaceshipTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7266,8 +7291,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
-              "projectPath": "C:\\Users\\opilane\\Source\\Repos\\TARpe22ShopEvert9\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+            "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+              "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+            },
+            "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
+              "projectPath": "C:\\Users\\opilane\\Source\\repos\\henri\\TARpe22ShopEvert\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
             }
           }
         }

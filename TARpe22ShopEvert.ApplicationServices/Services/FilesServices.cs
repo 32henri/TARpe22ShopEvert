@@ -11,15 +11,12 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
     {
         private readonly TARpe22ShopEvertContext _context;
         private readonly IHostingEnvironment _webHost;
-        public FilesServices
-            (
-                TARpe22ShopEvertContext context,
-                IHostingEnvironment webHost
-            )
+        public FilesServices(TARpe22ShopEvertContext context, IHostingEnvironment webHost)
         {
             _context = context;
             _webHost = webHost;
         }
+
         public void UploadFilesToDatabase(SpaceshipDto dto, Spaceship domain)
         {
             if (dto.Files != null && dto.Files.Count > 0)
@@ -34,7 +31,6 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
                             ImageTitle = photo.FileName,
                             SpaceshipId = domain.Id,
                         };
-
                         photo.CopyTo(target);
                         files.ImageData = target.ToArray();
 
@@ -64,7 +60,6 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             }
             return null;
         }
-
         public void FilesToApi(RealEstateDto dto, RealEstate realEstate)
         {
             string uniqueFileName = null;
@@ -79,6 +74,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
                     string uploadsFolder = Path.Combine(_webHost.ContentRootPath, "multipleFileUpload");
                     uniqueFileName = Guid.NewGuid().ToString() + "_" + image.FileName;
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
                         image.CopyTo(fileStream);
@@ -86,7 +82,7 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
                         {
                             Id = Guid.NewGuid(),
                             ExistingFilePath = uniqueFileName,
-                            CarId = realEstate.Id,
+                            RealEstateId = realEstate.Id
                         };
                         _context.FilesToApi.AddAsync(path);
                     }
@@ -121,6 +117,11 @@ namespace TARpe22ShopEvert.ApplicationServices.Services
             _context.FilesToApi.Remove(imageId);
             await _context.SaveChangesAsync();
             return null;
+        }
+
+        public void FilesToApiCar(CarDto dto, Car car)
+        {
+            throw new NotImplementedException();
         }
     }
 }
