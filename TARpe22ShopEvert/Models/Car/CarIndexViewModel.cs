@@ -2,7 +2,7 @@
 
 namespace TARpe22ShopEvert.Models.Cars
 {
-    public class CarIndexViewModel : Controller
+    public class CarIndexViewModel
     {
         public Guid Id { get; set; }
         public string Mark { get; set; }

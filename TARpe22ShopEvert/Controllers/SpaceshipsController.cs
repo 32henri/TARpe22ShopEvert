@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic.FileIO;
 using TARpe22ShopEvert.ApplicationServices.Services;
 using TARpe22ShopEvert.Core.Dto;
 using TARpe22ShopEvert.Core.ServiceInterface;
@@ -65,6 +66,7 @@ namespace TARpe22ShopEvert.Controllers
                 FullTripsCount = vm.FullTripsCount,
                 Type = vm.Type,
                 EnginePower = vm.EnginePower,
+                FuelType = vm.FuelType,
                 FuelConsumptionPerDay = vm.FuelConsumptionPerDay,
                 MaintenanceCount = vm.MaintenanceCount,
                 LastMaintenance = vm.LastMaintenance,
@@ -122,6 +124,7 @@ namespace TARpe22ShopEvert.Controllers
             vm.FullTripsCount = spaceship.FullTripsCount;
             vm.Type = spaceship.Type;
             vm.EnginePower = spaceship.EnginePower;
+            vm.FuelType = spaceship.FuelType;
             vm.FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay;
             vm.MaintenanceCount = spaceship.MaintenanceCount;
             vm.LastMaintenance = spaceship.LastMaintenance;
@@ -152,6 +155,7 @@ namespace TARpe22ShopEvert.Controllers
                 FullTripsCount = vm.FullTripsCount,
                 Type = vm.Type,
                 EnginePower = vm.EnginePower,
+                FuelType = vm.FuelType,
                 FuelConsumptionPerDay = vm.FuelConsumptionPerDay,
                 MaintenanceCount = vm.MaintenanceCount,
                 LastMaintenance = vm.LastMaintenance,
@@ -211,6 +215,7 @@ namespace TARpe22ShopEvert.Controllers
             vm.FullTripsCount = spaceship.FullTripsCount;
             vm.Type = spaceship.Type;
             vm.EnginePower = spaceship.EnginePower;
+            vm.FuelType = spaceship.FuelType;
             vm.FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay;
             vm.MaintenanceCount = spaceship.MaintenanceCount;
             vm.LastMaintenance = spaceship.LastMaintenance;
@@ -256,6 +261,7 @@ namespace TARpe22ShopEvert.Controllers
             vm.FullTripsCount = spaceship.FullTripsCount;
             vm.Type = spaceship.Type;
             vm.EnginePower = spaceship.EnginePower;
+            vm.FuelType = spaceship.FuelType;
             vm.FuelConsumptionPerDay = spaceship.FuelConsumptionPerDay;
             vm.MaintenanceCount = spaceship.MaintenanceCount;
             vm.LastMaintenance = spaceship.LastMaintenance;

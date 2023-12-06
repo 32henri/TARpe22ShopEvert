@@ -22,3 +22,22 @@ C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Applicatio
 C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.pdb
 C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.genruntimeconfig.cache
 C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\ref\TARpe22ShopEvert.ApplicationServices.dll
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\bin\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.deps.json
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\bin\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.runtimeconfig.json
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\bin\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.dll
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\bin\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.pdb
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\bin\Debug\net6.0\TARpe22ShopEvert.Core.dll
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\bin\Debug\net6.0\TARpe22ShopEvert.Data.dll
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\bin\Debug\net6.0\TARpe22ShopEvert.Core.pdb
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\bin\Debug\net6.0\TARpe22ShopEvert.Data.pdb
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.csproj.AssemblyReference.cache
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.AssemblyInfoInputs.cache
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.AssemblyInfo.cs
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.csproj.CoreCompileInputs.cache
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.csproj.CopyComplete
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.dll
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\refint\TARpe22ShopEvert.ApplicationServices.dll
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.pdb
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\TARpe22ShopEvert.ApplicationServices.genruntimeconfig.cache
+D:\repos\New folder\TARpe22ShopEvert.ApplicationServices\obj\Debug\net6.0\ref\TARpe22ShopEvert.ApplicationServices.dll

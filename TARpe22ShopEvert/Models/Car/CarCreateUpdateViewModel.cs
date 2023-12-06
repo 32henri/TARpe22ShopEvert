@@ -5,7 +5,7 @@ namespace TARpe22ShopEvert.Models.Cars
 {
     public class CarCreateUpdateViewModel : Controller
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
         public string Mark { get; set; }
         public int Price { get; set; }
         public string Model { get; set; }

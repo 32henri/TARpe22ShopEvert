@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TARpe22ShopEvert.Data.Migrations
 {
-    public partial class sheeeeeeeshõ : Migration
+    public partial class lol : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

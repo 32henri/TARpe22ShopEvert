@@ -17,3 +17,17 @@ C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\D
 C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.pdb
 C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.genruntimeconfig.cache
 C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Core\obj\Debug\net6.0\ref\TARpe22ShopEvert.Core.dll
+D:\repos\New folder\TARpe22ShopEvert.Core\bin\Debug\net6.0\TARpe22ShopEvert.Core.deps.json
+D:\repos\New folder\TARpe22ShopEvert.Core\bin\Debug\net6.0\TARpe22ShopEvert.Core.runtimeconfig.json
+D:\repos\New folder\TARpe22ShopEvert.Core\bin\Debug\net6.0\TARpe22ShopEvert.Core.dll
+D:\repos\New folder\TARpe22ShopEvert.Core\bin\Debug\net6.0\TARpe22ShopEvert.Core.pdb
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.csproj.AssemblyReference.cache
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.AssemblyInfoInputs.cache
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.AssemblyInfo.cs
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.csproj.CoreCompileInputs.cache
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.dll
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\refint\TARpe22ShopEvert.Core.dll
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.pdb
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\TARpe22ShopEvert.Core.genruntimeconfig.cache
+D:\repos\New folder\TARpe22ShopEvert.Core\obj\Debug\net6.0\ref\TARpe22ShopEvert.Core.dll

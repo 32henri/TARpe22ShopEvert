@@ -28,4 +28,8 @@
     <ProjectReference Include="..\TARpe22ShopEvert.Core\TARpe22ShopEvert.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

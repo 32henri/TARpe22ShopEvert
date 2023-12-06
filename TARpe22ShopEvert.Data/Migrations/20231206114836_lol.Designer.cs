@@ -12,8 +12,8 @@ using TARpe22ShopEvert.Data;
 namespace TARpe22ShopEvert.Data.Migrations
 {
     [DbContext(typeof(TARpe22ShopEvertContext))]
-    [Migration("20231204091943_sheeeeeeeshõ")]
-    partial class sheeeeeeeshõ
+    [Migration("20231206114836_lol")]
+    partial class lol
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -20,3 +20,20 @@ C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Data\obj\D
 C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.pdb
 C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.genruntimeconfig.cache
 C:\Users\opilane\Source\repos\henri\TARpe22ShopEvert\TARpe22ShopEvert.Data\obj\Debug\net6.0\ref\TARpe22ShopEvert.Data.dll
+D:\repos\New folder\TARpe22ShopEvert.Data\bin\Debug\net6.0\TARpe22ShopEvert.Data.deps.json
+D:\repos\New folder\TARpe22ShopEvert.Data\bin\Debug\net6.0\TARpe22ShopEvert.Data.runtimeconfig.json
+D:\repos\New folder\TARpe22ShopEvert.Data\bin\Debug\net6.0\TARpe22ShopEvert.Data.dll
+D:\repos\New folder\TARpe22ShopEvert.Data\bin\Debug\net6.0\TARpe22ShopEvert.Data.pdb
+D:\repos\New folder\TARpe22ShopEvert.Data\bin\Debug\net6.0\TARpe22ShopEvert.Core.dll
+D:\repos\New folder\TARpe22ShopEvert.Data\bin\Debug\net6.0\TARpe22ShopEvert.Core.pdb
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.csproj.AssemblyReference.cache
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.AssemblyInfoInputs.cache
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.AssemblyInfo.cs
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.csproj.CoreCompileInputs.cache
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.csproj.CopyComplete
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.dll
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\refint\TARpe22ShopEvert.Data.dll
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.pdb
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\TARpe22ShopEvert.Data.genruntimeconfig.cache
+D:\repos\New folder\TARpe22ShopEvert.Data\obj\Debug\net6.0\ref\TARpe22ShopEvert.Data.dll

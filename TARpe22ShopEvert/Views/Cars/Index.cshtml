@@ -19,7 +19,32 @@
             </tr>
         </thead>
         <tbody>
-            lel loodab et siin ei pea midagi olema
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>@rowNumber</td>
+                    <td>@car.Mark</td>
+                    <td>@car.Model</td>
+                    <td>@car.HorsePower</td>
+                    <td>@car.Price</td>
+                    <td>
+                        @if (car.IsNew)
+                        {
+                            @("New!!!")
+                        }
+                        else
+                        {
+                            @("Old")
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="details" asp-controller="car" asp-route-id="@car.Id" class="btn btn-info">Details</a>
+                        <a asp-action="Update" asp-controller="car" asp-route-id="@car.Id" class="btn btn-primary">Edit</a>
+                        <a asp-action="delete" asp-controller="car" asp-route-id="@car.Id" type="submit" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                rowNumber++;
+            }
         </tbody>
     </table>
 </form>
