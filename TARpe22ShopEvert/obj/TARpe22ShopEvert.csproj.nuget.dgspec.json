@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\New folder\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj": {}
+    "D:\\repos\\New folder (3)\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj": {}
   },
   "projects": {
-    "D:\\repos\\New folder\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj": {
+    "D:\\repos\\New folder (3)\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\New folder\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj",
+        "projectUniqueName": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj",
         "projectName": "TARpe22ShopEvert.ApplicationServices",
-        "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj",
+        "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj",
         "packagesPath": "C:\\Users\\hener\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\New folder\\TARpe22ShopEvert.ApplicationServices\\obj\\",
+        "outputPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.ApplicationServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Visual Studio 2022\\Shared components\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
-                "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+              "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+                "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
               },
-              "D:\\repos\\New folder\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
-                "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
+              "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
+                "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
               }
             }
           }
@@ -52,6 +52,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Microsoft.AspNetCore.Hosting": {
               "target": "Package",
               "version": "[2.2.7, )"
@@ -109,14 +113,14 @@
         }
       }
     },
-    "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+    "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "projectUniqueName": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
         "projectName": "TARpe22ShopEvert.Core",
-        "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
+        "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj",
         "packagesPath": "C:\\Users\\hener\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\obj\\",
+        "outputPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Visual Studio 2022\\Shared components\\NuGetPackages"
@@ -203,14 +207,14 @@
         }
       }
     },
-    "D:\\repos\\New folder\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
+    "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\New folder\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
+        "projectUniqueName": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
         "projectName": "TARpe22ShopEvert.Data",
-        "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
+        "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj",
         "packagesPath": "C:\\Users\\hener\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\New folder\\TARpe22ShopEvert.Data\\obj\\",
+        "outputPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Visual Studio 2022\\Shared components\\NuGetPackages"
@@ -232,8 +236,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
-                "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+              "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+                "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
               }
             }
           }
@@ -305,14 +309,14 @@
         }
       }
     },
-    "D:\\repos\\New folder\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj": {
+    "D:\\repos\\New folder (3)\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\New folder\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj",
+        "projectUniqueName": "D:\\repos\\New folder (3)\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj",
         "projectName": "TARpe22ShopEvert",
-        "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj",
+        "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert\\TARpe22ShopEvert.csproj",
         "packagesPath": "C:\\Users\\hener\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\New folder\\TARpe22ShopEvert\\obj\\",
+        "outputPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Visual Studio 2022\\Shared components\\NuGetPackages"
@@ -334,14 +338,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\repos\\New folder\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj": {
-                "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj"
+              "D:\\repos\\New folder (3)\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj": {
+                "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.ApplicationServices\\TARpe22ShopEvert.ApplicationServices.csproj"
               },
-              "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
-                "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
+              "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj": {
+                "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Core\\TARpe22ShopEvert.Core.csproj"
               },
-              "D:\\repos\\New folder\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
-                "projectPath": "D:\\repos\\New folder\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
+              "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj": {
+                "projectPath": "D:\\repos\\New folder (3)\\TARpe22ShopEvert.Data\\TARpe22ShopEvert.Data.csproj"
               }
             }
           }
