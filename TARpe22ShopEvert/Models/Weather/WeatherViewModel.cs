@@ -1,6 +1,4 @@
-﻿using TARpe22ShopEvert.Core.Dto.WeatherDtos;
-
-namespace TARpe22ShopEvert.Models.Weather
+﻿namespace TARpe22ShopEvert.Models.Weather
 {
     public class WeatherViewModel
     {

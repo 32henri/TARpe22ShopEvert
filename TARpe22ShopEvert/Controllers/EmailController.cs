@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TARpe22ShopEvert.Core.Dto;
+using TARpe22ShopEvert.Core.ServiceInterface;
+using TARpe22ShopEvert.Models.Email;
 
 namespace TARpe22ShopEvert.Controllers
 {
